@@ -34,6 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        
+        document.getElementById("mainbody").innerHTML = "Got it!";
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -44,7 +46,7 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
         
-        document.getElementById("mainbody").html = "Got it!";
+        
 
         console.log('Received Event: ' + id);
     }
