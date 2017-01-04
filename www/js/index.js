@@ -43,6 +43,8 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+        
+        document.getElementById("mainbody").html = "Got it!";
 
         console.log('Received Event: ' + id);
     }
